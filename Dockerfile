@@ -4,5 +4,9 @@ LABEL maintainer="Zeeshan Ali"
 
 EXPOSE 8080
 
-ADD test.java /project1
+RUN apt-get update
+
+RUN apt-get install -y nginx
+
+CMD ["echo","Image Created"]
 
