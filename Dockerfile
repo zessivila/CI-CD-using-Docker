@@ -4,6 +4,5 @@ LABEL maintainer="Zeeshan Ali"
 
 EXPOSE 8080
 
-ADD target/CI-CD-using-Docker.jar CI-CD-using-Docker.jar
+ADD test.java /project1
 
-ENTRYPOINT ["java","-jar","/CI-CD-using-Docker.jar"]
