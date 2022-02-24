@@ -19,5 +19,13 @@ pipeline {
                 sh 'mvn package'
           }
 	}
-    }
+         stage('Run Docker container on Jenkins Agent') {
+		 
+	     steps 
+   {
+                sh "docker run -d -p 8003:8080 zali45591/samplewebapp"
+ 
+            }
+        }	 
+     }
  }
