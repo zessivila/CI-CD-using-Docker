@@ -4,6 +4,6 @@ LABEL maintainer="Zeeshan Ali"
 
 EXPOSE 8080
 
-ADD target/docker-jenkins-integration-sample.jar target/docker-jenkins-integration-sample.jar
+ADD target/CI-CD-using-Docker.jar target/CI-CD-using-Docker.jar
 
-ENTRYPOINT ["java","-jar","/docker-jenkins-integration-sample.jar"]
+ENTRYPOINT ["java","-jar","/CI-CD-using-Docker.jar"]
