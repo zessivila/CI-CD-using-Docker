@@ -4,8 +4,6 @@ LABEL maintainer="Zeeshan Ali"
 
 EXPOSE 8080
 
-RUN apt-get update 
+ADD target/docker-jenkins-integration-sample.jar target/docker-jenkins-integration-sample.jar
 
-RUN apt-get install –y nginx 
-
-CMD [“echo”,”Image created”] 
+ENTRYPOINT ["java","-jar","/docker-jenkins-integration-sample.jar"]
