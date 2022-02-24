@@ -23,7 +23,7 @@ pipeline {
 		 
 	     steps 
    {
-                sh "docker run -d -p 8003:8080 zali45591/samplewebapp"
+                sh "docker run -d -p 8003:8080 zali45591/docker-jenkins-integration-sample"
  
             }
         }	 
